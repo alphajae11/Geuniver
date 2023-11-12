@@ -10,6 +10,14 @@ import JGCalendarpage from './components/pages/JGsoftware/CalTodo/JGCalendarpage
 import Blogpage from './components/pages/JGsoftware/blogpage';
 import JGTodolistpage from './components/pages/JGsoftware/CalTodo/JGTodolistpage';
 import JGwikipage from './components/pages/JGsoftware/JGwikipage';
+import ExternalNewspage from './components/pages/JGsoftware/JGNews/ExternalNewspage';
+import JGNewspage from './components/pages/JGsoftware/JGNews/JGNewspage';
+import JGAIMainpage from './components/pages/JGsoftware/JGAI/JGAIMainpage';
+import JGBlockchainMainpage from './components/pages/JGsoftware/JGBlockchain/JGBlockchainMainpage';
+import Weatherpage from './components/pages/JGsoftware/JGNews/Weatherpage';
+import JGMessengerpage from './components/pages/JGsoftware/JGMessenger/JGMessengerpage';
+import Gmapspage from './components/pages/JGsoftware/Gmaps/Gmapspage';
+import BusApppage from './components/pages/JGsoftware/Gmaps/BusApppage';
 
 function App() {
   return (
@@ -23,7 +31,15 @@ function App() {
         <Route path='/todolist' Component={JGTodolistpage} />
         <Route path='/Blogs' Component={Blogpage} />
         <Route path='/JGGames' Component={JGgamelistpage} />
+        <Route path='/worldnews' Component={ExternalNewspage} />
+        <Route path='/JGnews' Component={JGNewspage} />
+        <Route path='/weather' Component={Weatherpage} />
         <Route path='/JGwiki' Component={JGwikipage} />
+        <Route path='/JGMessenger' Component={JGMessengerpage} />
+        <Route path='/Gmaps/map' Component={Gmapspage} />
+        <Route path='/Gmaps/bus' Component={BusApppage} />
+        <Route path='/JGAI' Component={JGAIMainpage} />
+        <Route path='/JGBlockchain' Component={JGBlockchainMainpage} />
       </Routes>
     </Router>
     // <div className="App">
