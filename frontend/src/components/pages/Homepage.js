@@ -1,6 +1,7 @@
 // HomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../../styles/Homepage.css';
 
 var loggedIn = false;
 
@@ -10,7 +11,7 @@ const HomePage = () => {
         {loggedIn ? (
                 <>
                     <div className='Top_header'>
-                    <img src='frontend/src/style/logos/Geuniver.png' alt="Geuniver_logo" width={50} height={50} />
+                    <img src='../../styles/logos/Geuniver.png' alt="Geuniver_logo" width={100} height={100} />
                     <div className='profile_options'>
                         
                         <Link to="/profile" className='ProfileButton'>
@@ -23,8 +24,7 @@ const HomePage = () => {
                     <div className='intro'>
                         <h1>Welcome to Geuniver</h1>
                         <p>
-                            In Geuniver, you can try out all the software products created by JG.
-                            We will be making all features ranging from AI, games and so on.
+                            Let's Try out the software products!
                         </p>
                     </div>
                 </>
@@ -48,7 +48,8 @@ const HomePage = () => {
                     <div className='intro'>
                         <h1>Welcome to Geuniver, User!</h1>
                         <p>
-                            Let's Try out the software products!
+                            In Geuniver, you can try out all the software products created by JG. {'\n'}
+                            We will be making all features ranging from AI, games and so on.
                         </p>
                     </div>
                 </>
